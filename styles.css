@@ -1,0 +1,187 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background gradient */
+body {
+  background: linear-gradient(to right, #c0a39c, #feb47b); /* A warm gradient from pink to orange */
+  color: #333;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+}
+
+
+/* Button Styles */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px; /* Increased padding for a larger button */
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 8px; /* Rounded corners for the button box */
+  font-weight: bold; /* Bold text */
+  font-size: 1.1em; /* Slightly larger text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+.download-btn:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover for more emphasis */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; /* Fixed position to stay in place while scrolling */
+  top: 0; /* Aligns the sidebar to the top */
+  left: 0; /* Aligns the sidebar to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensures items take full width */
+  justify-content: flex-start; /* Aligns content to the top */
+  overflow-y: auto; /* Allows scrolling within the sidebar if content overflows */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow on the right */
+  z-index: 1000; /* Ensures the sidebar stays above other content */
+}
+
+/* Sidebar header styling */
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-align: center; /* Center the header text */
+}
+
+/* Navigation styling inside the sidebar */
+.sidebar nav ul {
+  list-style-type: none;
+  width: 100%; /* Full width of the sidebar */
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.sidebar nav ul li {
+  margin: 10px 0; /* Space between navigation items */
+}
+
+/* Styling for navigation links */
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px 15px; /* Padding for better click area */
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+  width: 100%; /* Ensure links take full width of the sidebar */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+/* Hover effect for navigation links */
+.sidebar nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Active link styling */
+.sidebar nav ul li a.active {
+  background-color: #575757;
+  font-weight: bold;
+}
+
+/* Main content area styling */
+.main-content {
+  margin-left: 250px; /* Leaves space for the fixed sidebar */
+  padding: 40px;
+  width: calc(100% - 250px); /* Adjusts the width of the main content */
+  overflow-y: auto;
+}
+
+/* Intro section styling */
+.intro {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.intro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #333;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro p {
+  font-size: 20px;
+  color: #666;
+}
+
+/* General section styling */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Section heading styling */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Footer section styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Scroll to top button styling */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: opacity 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top:hover {
+  background-color: #575757;
+  opacity: 0.8;
+}
